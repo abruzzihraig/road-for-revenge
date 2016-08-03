@@ -16,7 +16,7 @@ You know I just like a man who from cartoon Polish Man. I don’t like talk with
 
 The meetup is so low-quality, so I don’t want to attend it again. Fortunately I still got 3 guys here. There is only one guy looked has good knowledge as a devops engineer. He just left from Netease then get here recently. The other two guys has a same age with me as graduating from Monash University. Anyway, I got 3 guys as friends here, in addition to the Chinese colleague nearby me.
 
-Those friends helped me to fixed so many issues on life. They are all kind person. But there still has something made me felt sad. That is, I noted those guys who has a same age with me always through wrong way on technic and profession, just like I used to be 3 years ago.
+Those friends helped me fixing so many issues on life. They are all kind person. But there still has something made me felt sad. That is, I noted those guys who has a same age with me always through wrong way on technic and profession, just like I used to be 3 years ago.
 
 No matter what I suppose how should they solve the high-level problems first to prevent falling into traps. Nobody really could feel the source of problems. Continues with tired and unprofessional status, can not get a good job and, do not know what is a valuable part they should invest on profession. With the kindness on work, receive each of unreasonable requirement, then make themselves into the traps. So sad so helpless, can’t break the paper box with the soft body:
 
