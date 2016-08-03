@@ -12,4 +12,4 @@ I read the half article. It indicates a clear argument: your time is limited in 
 And It is indeed has some meaningful viewpoints that I have never seen before. The most fascinating part I was learned is that you should figure out the background of the author whose books you are going to read on. In that way you can analyse which part of his/her books is intellectual context. Reading book dialectically then you won’t following all of arguments from an author, so you can prevent some of meaningless parts with prejudices, blind spots, desperate moments or desires from their books.
 
 Good night with the best soft drink in Australia:
-![BUNDABERG](https://github.com/abruzzihraig/road-for-revenge/raw/master/assets/images/bundaberg.jpg "BUNDABERG")
+![BUNDABERG](https://github.com/abruzzihraig/road-for-revenge/blob/master/assets/images/bundaberg.jpg "BUNDABERG")
