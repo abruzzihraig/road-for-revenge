@@ -1,4 +1,5 @@
-# road-for-revenge
+# Road For Revenge
+[Journals: Road For Revenge](https://abruzzihraig.github.io/road-for-revenge/)
 
 ## Why I have to find the way to live
 
