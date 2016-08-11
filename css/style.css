@@ -181,6 +181,9 @@ section.main .post .post-header.hover:after {
 section.main .post .content {
   margin-top: 65px;
 }
+section.main .post .content img {
+  width: 100%;
+}
 @media (max-width: 33.9em) {
   section.main .post .content {
     margin-top: 40px;
