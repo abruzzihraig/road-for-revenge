@@ -110,7 +110,6 @@ section.main .post {
 section.main .post .post-header {
   position: relative;
   width: 100%;
-  margin: 0 10px;
 }
 section.main .post .post-header:before {
   position: absolute;
