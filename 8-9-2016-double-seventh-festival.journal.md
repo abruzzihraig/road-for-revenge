@@ -9,6 +9,6 @@ So I decided to cook for her today. Unfortunately I just can cook a few dishes, 
 
 Fired rice was nice thus nothing to criticise, it should be perfect I suppose. As for the beef with chilli, I forgot the right order to cook them separately. So I had to fire them three times while it still tasted tasteless even though I had already put so much salt. For saving it, I also put lots of peppers on it. Hoped my girlfriend could excuse my poor cooking skill.
 
-If some food cooked by yourself, even though they taste bad, you will eat them up. Might that’s why home cooking is better then outsider.
+If some food cooked by yourself, even though they taste bad, you will eat them up. Might that’s why home cooking is better than outsider.
 
 9/8/2016
