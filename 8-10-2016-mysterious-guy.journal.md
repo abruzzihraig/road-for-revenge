@@ -1,5 +1,5 @@
 ### Mysterious Guy
-Since I worked here there always a guy everyday I can see in the park, in witch I have to through to get in office. 
+Since I worked here there is always a guy everyday I can see in the park, in witch I have to get through to my office.
 
 The guy seems mysterious. He always sits on the same bench which back to road. No matter how strong wind, no matter how dense cloud, every morning when I walked nearby the beach, I always could see the guy’s back, the guy’s hat and the guy’s hands were rubbing.
 
