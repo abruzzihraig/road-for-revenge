@@ -36,7 +36,7 @@ Welcome to review, and thanks guys.
 | Name        | Github Account | Typo | Grammar Issues | Valuable Advice | Total Bonus | Unpaid | Hidden Rewards |
 | ----------- | -------------- | ---- | -------------- | --------------- | -----------:| ------:| --------------:|
 | Siyuan Wang | 0neSe7en       | 0    | 3              | 1               |        $2.5 |     $0 |    null        |
-| Jingdong Tu | InfinityBlue   | 4    | 1              | 0               |        $6.3 |     $0 |   HR[0]        |
+| Jingdong Tu | InfinityBlue   | 4    | 1              | 0               |        $6.3 |   $0.6 |   HR[0]        |
 | Daofeng Wu  | idiotWu        | 0    | 1              | 0               |        $0.5 |     $0 |    null        |
 | Tim         | tmchng         | 2    | 8              | 3               |        $7.4 |   $7.4 |    null        |
 
