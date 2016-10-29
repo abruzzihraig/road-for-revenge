@@ -9,4 +9,4 @@ I called it a toy because it has a colorful RGB lights on the panel. It has 8x8 
 
 I am not sure whether I will play it frequently if I bought it. But for these days, I was indeed attracted to it. My girlfriend seems doesn't like it. Even though it doesn't have a high price, I still need to think about if I will buy it.
 
-You might be shocked with it too: [Launchpad Pro](https://youtu.be/0KX3Us11LrY)
+You might be shocked by it too: [Launchpad Pro](https://youtu.be/0KX3Us11LrY)
