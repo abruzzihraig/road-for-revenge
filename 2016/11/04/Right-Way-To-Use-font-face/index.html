@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="A journal for the road">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Yang He">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Right Way To Use @font-face"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="A journal for the road" />
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Road To Revenge"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Right Way To Use @font-face - Road To Revenge</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
+        
+    </div>
+</header>
+
+        <section class="main">
+            
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/2016/11/04/Right-Way-To-Use-font-face/">
+                Right Way To Use @font-face
+            </a>
+        </h1>
+        <div class="post-info">
+            <span class="date">2016-11-04</span>
+            <a href="https://github.com/abruzzihraig/road-for-revenge/issues/96" target="_blank" class="comments article-comment-link">review</a>
+
+            
+            
+                <span class="category">
+                    <a href="/categories/Journal/">Journal</a>
+                </span>
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <p>It is a technical journal.</p>
+<p>We all know that in CSS we can use @font-face to load the font which we want to use on our website. And fortunately, it is even supported by IE6. So that is always a useful function for our CSS code.</p>
+<p>Since I worked in China, and there were few chances to use the feature on our product. That’s because any Chinese font set is too large to use on a website. There is no one could accept to download a dozen of megabyte from font data before they can see the web page.</p>
+<p>Once I used the feature in my graduation product, which is cutting Chinese font set off to the small subset to load. It will improve the download speed hugely. But I don’t want to talk about it today. I just want to talk about the general usage.</p>
+<p>Since two months ago. I’ve written a handy mixing function in Stylus for handling which font-family would be used for any of the multiple languages.</p>
+<p>It looks like below:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line">$EN-fontset = &apos;OpenSans Regular&apos;, Helvetica, Arial</div><div class="line">$JA-fontset = &apos;Noto Sans CJK JP&apos;, &apos;Hiragino Kaku Gothic Pro W3&apos;, &apos;Hiragino Kaku Gothic Pro&apos;, Osaka, Meiryo, &apos;MS PGothic&apos;</div><div class="line">$ZH-fontset = &apos;PingFang SC&apos;, &apos;Nato Sans CJK SC&apos;, &apos;Hiragino Sans GB&apos;, &apos;Microsoft YaHei&apos;, &apos;WenQuan Yi Micro Hei&apos;</div><div class="line"></div><div class="line">/*</div><div class="line"> * i18n Font Family Mixin</div><div class="line"> *</div><div class="line"> * Usage:</div><div class="line"> * body</div><div class="line"> *   $i18n() // without parameters</div><div class="line"> *</div><div class="line"> * h1</div><div class="line"> *   $i18n: &apos;OpenSans Bold&apos;</div><div class="line"> */</div><div class="line">$i18n()</div><div class="line">  if (length(arguments) &gt; 0) &#123;</div><div class="line">    $en = arguments, $EN-fontset</div><div class="line">    $ja = arguments, $EN-fontset, $JA-fontset</div><div class="line">    $zh = arguments, $EN-fontset, $ZH-fontset</div><div class="line">  &#125; else &#123;</div><div class="line">    $en = $EN-fontset,</div><div class="line">    $ja = $EN-fontset, $JA-fontset</div><div class="line">    $zh = $EN-fontset, $ZH-fontset</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  &amp;:lang(en)</div><div class="line">    font-family: $en</div><div class="line">  &amp;:lang(ja)</div><div class="line">    font-family: $ja</div><div class="line">  &amp;:lang(zh)</div><div class="line">    font-family: $zh</div><div class="line"></div><div class="line">  &amp;:lang(ja)</div><div class="line">  &amp;:lang(zh)</div><div class="line">    if (length(arguments) &gt; 0 &amp;&amp; match(&apos;Bold&apos;, arguments[0]))</div><div class="line">      font-weight: 600 // Bold</div><div class="line">    if (length(arguments) &gt; 0 &amp;&amp; match(&apos;Semibold&apos;, arguments[0]))</div><div class="line">      font-weight: 500 // Semibold</div><div class="line">    if (length(arguments) &gt; 0 &amp;&amp; match(&apos;Light&apos;, arguments[0]))</div><div class="line">      font-weight: 300 // Light</div><div class="line">    if (length(arguments) &gt; 0 &amp;&amp; match(&apos;Italic&apos;, arguments[0]))</div><div class="line">      font-style: italic</div></pre></td></tr></table></figure></p>
+<p>And how I load those custom fonts by @font-face:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">$fontSet = &#123;</div><div class="line">  &apos;OpenSans Bold&apos;: &apos;opensans-bold-webfont&apos;,</div><div class="line">  &apos;OpenSans Regular&apos;: &apos;opensans-regular-webfont&apos;,</div><div class="line">  &apos;OpenSans Light&apos;: &apos;opensans-light-webfont&apos;,</div><div class="line">  &apos;OpenSans Semibold&apos;: &apos;opensans-semibold-webfont&apos;,</div><div class="line">  &apos;OpenSans Italic&apos;: &apos;opensans-italic-webfont&apos;,</div><div class="line">  &apos;OpenSans Light Italic&apos;: &apos;opensans-lightitalic-webfont&apos;</div><div class="line">&#125;</div><div class="line"></div><div class="line">for font, filename in $fontSet</div><div class="line">  @font-face</div><div class="line">    font-family: font;</div><div class="line">    src: url(&apos;./assets/fonts/&apos; + filename + &apos;.eot&apos;);</div><div class="line">    src: url(&apos;./assets/fonts/&apos; + filename + &apos;.eot?#iefix&apos;) format(&apos;embedded-opentype&apos;),</div><div class="line">    url(&apos;./assets/fonts/&apos; + filename + &apos;.woff2&apos;) format(&apos;woff2&apos;),</div><div class="line">    url(&apos;./assets/fonts/&apos; + filename + &apos;.woff&apos;) format(&apos;woff&apos;),</div><div class="line">    url(&apos;./assets/fonts/&apos; + filename + &apos;.ttf&apos;) format(&apos;truetype&apos;);</div><div class="line">    font-weight: normal;</div><div class="line">    font-style: normal;</div></pre></td></tr></table></figure></p>
+<p>You may feel the $i18n has a redundant logic, but never mind. You don’t need to care about if it is elegant. Because the way I chose is already wrong.</p>
+<p>In this usage, for each element which I want to apply a different font-family I have to add a mixin like <code>$i18n: &#39;OpenSans Semibold&#39;</code>. Then the element will get a series of font set started with the <code>OpenSans Semibold</code>.</p>
+<p>Is that weird, isn’t it? At least I felt it so bizarre. But I didn’t have time to figure out what is the right way to use then.</p>
+<p>In this afternoon, after we released the weekly version, I finally could refactor the way I used.</p>
+<p>After searching how Google Fonts display when zipped various font style in the same font family. I found it only use one font name as the name of @font-face, but load different font resource with diverse <code>font-style</code> and <code>font-weight</code>.</p>
+<p>So I changed my iteration logic on @font-face to:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line">$fontSet = &#123;</div><div class="line">  &apos;OpenSans Bold&apos;: &#123;</div><div class="line">    filename: &apos;opensans-bold-webfont&apos;,</div><div class="line">    weight: 700,</div><div class="line">    style: normal</div><div class="line">  &#125;,</div><div class="line">  &apos;OpenSans Regular&apos;: &#123;</div><div class="line">    filename: &apos;opensans-regular-webfont&apos;,</div><div class="line">    weight: 400,</div><div class="line">    style: normal</div><div class="line">  &#125;,</div><div class="line">  &apos;OpenSans Light&apos;: &#123;</div><div class="line">    filename: &apos;opensans-light-webfont&apos;,</div><div class="line">    weight: 300,</div><div class="line">    style: normal</div><div class="line">  &#125;,</div><div class="line">  &apos;OpenSans Semibold&apos;: &#123;</div><div class="line">    filename: &apos;opensans-semibold-webfont&apos;,</div><div class="line">    weight: 600,</div><div class="line">    style: normal</div><div class="line">  &#125;,</div><div class="line">  &apos;OpenSans Italic&apos;: &#123;</div><div class="line">    filename: &apos;opensans-italic-webfont&apos;,</div><div class="line">    weight: 400,</div><div class="line">    style: italic</div><div class="line">  &#125;,</div><div class="line">  &apos;OpenSans Light Italic&apos;: &#123;</div><div class="line">    filename: &apos;opensans-lightitalic-webfont&apos;,</div><div class="line">    weight: 300,</div><div class="line">    style: italic</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">for fontName, font in $fontSet</div><div class="line">  @font-face</div><div class="line">    font-family: OpenSans;</div><div class="line">    src: url(&apos;./assets/fonts/&apos; + font.filename + &apos;.eot&apos;);</div><div class="line">    src: url(&apos;./assets/fonts/&apos; + font.filename + &apos;.eot?#iefix&apos;) format(&apos;embedded-opentype&apos;),</div><div class="line">    url(&apos;./assets/fonts/&apos; + font.filename + &apos;.woff2&apos;) format(&apos;woff2&apos;),</div><div class="line">    url(&apos;./assets/fonts/&apos; + font.filename + &apos;.woff&apos;) format(&apos;woff&apos;),</div><div class="line">    url(&apos;./assets/fonts/&apos; + font.filename + &apos;.ttf&apos;) format(&apos;truetype&apos;);</div><div class="line">    font-weight: font.weight;</div><div class="line">    font-style: font.style;</div></pre></td></tr></table></figure></p>
+<p>In this version you can see, we only need to specify the common font family ‘OpenSans’ but use different font-weight and font-style to decide which font will indeed be adopted.</p>
+<p>The logic becomes clear to us. Then let’s look how should we refactor the $i18n mixing function.</p>
+<p>Since we don’t need to specify any particular font-family as the first font on each element, so the <code>arguments</code> for us is only indicating which font we finally want to display.</p>
+<p>Therefore the code could be reduced to:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">$i18n()</div><div class="line">  $en = $EN-fontset</div><div class="line">  $ja = $EN-fontset, $JA-fontset</div><div class="line">  $zh = $EN-fontset, $ZH-fontset</div><div class="line"></div><div class="line">  font-family: $en // $en as a fallback for all the other languages</div><div class="line">  font-style: normal</div><div class="line">  font-weight: 400</div><div class="line"></div><div class="line">  &amp;:lang(en)</div><div class="line">    font-family: $en</div><div class="line">  &amp;:lang(ja)</div><div class="line">    font-family: $ja</div><div class="line">  &amp;:lang(zh)</div><div class="line">    font-family: $zh</div></pre></td></tr></table></figure></p>
+<p>By the way, I suppose there is few people know the pseudo ‘lang’. It is an excellent way to handle the internationalization in CSS.</p>
+<p>So good so far. And then, we could match the value of $i18n to a correct font:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">if (length(arguments) &gt; 0 &amp;&amp; match(&apos;Regular&apos;, arguments[0]))</div><div class="line">  font-weight: 400 // Regular</div><div class="line">if (length(arguments) &gt; 0 &amp;&amp; match(&apos;Bold&apos;, arguments[0]))</div><div class="line">  font-weight: 700 // Bold</div><div class="line">if (length(arguments) &gt; 0 &amp;&amp; match(&apos;Semibold&apos;, arguments[0]))</div><div class="line">  font-weight: 600 // Semibold</div><div class="line">if (length(arguments) &gt; 0 &amp;&amp; match(&apos;Light&apos;, arguments[0]))</div><div class="line">  font-weight: 300 // Light</div><div class="line">if (length(arguments) &gt; 0 &amp;&amp; match(&apos;Italic&apos;, arguments[0]))</div><div class="line">  font-style: italic</div><div class="line">  font-weight: 400</div></pre></td></tr></table></figure></p>
+<p>How nice it is. The final function has been improved like:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line"> * i18n Font Family Mixin</div><div class="line"> *</div><div class="line"> * Usage:</div><div class="line"> * body</div><div class="line"> *   $i18n() // without parameters</div><div class="line"> *</div><div class="line"> * h1</div><div class="line"> *   $i18n: &apos;Bold&apos;</div><div class="line"> */</div><div class="line">$i18n()</div><div class="line">  $en = $EN-fontset</div><div class="line">  $ja = $EN-fontset, $JA-fontset</div><div class="line">  $zh = $EN-fontset, $ZH-fontset</div><div class="line"></div><div class="line">  font-family: $en</div><div class="line">  font-style: normal</div><div class="line">  font-weight: 400</div><div class="line"></div><div class="line">  if (length(arguments) &gt; 0 &amp;&amp; match(&apos;Regular&apos;, arguments[0]))</div><div class="line">    font-weight: 400 // Regular</div><div class="line">  if (length(arguments) &gt; 0 &amp;&amp; match(&apos;Bold&apos;, arguments[0]))</div><div class="line">    font-weight: 700 // Bold</div><div class="line">  if (length(arguments) &gt; 0 &amp;&amp; match(&apos;Semibold&apos;, arguments[0]))</div><div class="line">    font-weight: 600 // Semibold</div><div class="line">  if (length(arguments) &gt; 0 &amp;&amp; match(&apos;Light&apos;, arguments[0]))</div><div class="line">    font-weight: 300 // Light</div><div class="line">  if (length(arguments) &gt; 0 &amp;&amp; match(&apos;Italic&apos;, arguments[0]))</div><div class="line">    font-style: italic</div><div class="line">    font-weight: 400</div><div class="line"></div><div class="line">  &amp;:lang(en)</div><div class="line">    font-family: $en</div><div class="line">  &amp;:lang(ja)</div><div class="line">    font-family: $ja</div><div class="line">  &amp;:lang(zh)</div><div class="line">    font-family: $zh</div></pre></td></tr></table></figure></p>
+<p>That’s what we expected! May my trap guides your way.</p>
+<p><em>Pls comment on the relative Issue of this journal on my Github, any advice would be appreciated!</em></p>
+
+    </div>
+
+    
+
+    
+        <div class="post-tags">
+            <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/I18N/">#I18N</a> <a href="/tags/CSS/">#CSS</a> <a href="/tags/Tech/">#Tech</a>
+        </div>
+    
+
+    <!-- Comments -->
+    
+    <div class="comments">
+        
+
+
+    </div>
+    
+
+</div>
+
+        </section>
+
+    </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    All of themes are shit on Hexo except this funny one. Thanks for the desinger Jonathan Klughertz. So that I could use it to leverage my journals performed better.
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" href="/2016/11/04/Right-Way-To-Use-font-face/">Right Way To Use @font-fa</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2016/11/03/Funny-Video/">Funny Video</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2016/11/02/Way-To-Control-Progress/">Way To Control Progress</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2016/11/01/Boring-Holiday/">Boring Holiday</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 footer-categories">
+    <h2>Categories</h2>
+    <ul>
+        
+        <li>
+            <a class="footer-post" href="/categories/Journal/">Journal</a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/abruzzihraig/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="mailto:abruzzi.hraig@gmail.com">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    Thanks for the guy's design <a href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+<script src="/js/main.js"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
