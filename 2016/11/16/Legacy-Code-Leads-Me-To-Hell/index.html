@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="A journal for the road">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Yang He">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Legacy Code Leads Me To Hell"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="A journal for the road" />
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Road To Revenge"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Legacy Code Leads Me To Hell - Road To Revenge</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
+        
+    </div>
+</header>
+
+        <section class="main">
+            
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/2016/11/16/Legacy-Code-Leads-Me-To-Hell/">
+                Legacy Code Leads Me To Hell
+            </a>
+        </h1>
+        <div class="post-info">
+            <span class="date">2016-11-16</span>
+            <a href="https://github.com/abruzzihraig/road-for-revenge/issues/108" target="_blank" class="comments article-comment-link">review</a>
+
+            
+            
+                <span class="category">
+                    <a href="/categories/Journal/">Journal</a>
+                </span>
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <blockquote>
+<p>I wrote a piece of email to my boss to answer his question about a bug. Since I was earnest about it, so I just want to migrate it to my today’s diary.</p>
+</blockquote>
+<p>Hi Yee,</p>
+<p>This afternoon I tried to use English to explain why the video injection doesn’t show on some websites. And I know you are totally confused with my poor English spoken, I feel so sorry, and that makes me feel uncomfortable. Even though it is hard to explain even use Chinese, I still want to explain it again to you, and it is also a practice to me that using English to answer a complicated question.</p>
+<p>During 2013 - 2015, most of the popular front-end technical architectures are based on ‘Multiple Pages Website.’ It is a traditional technical solution to build a website. Even today, there are still millions of websites are using multiple pages. Such as those we found that didn’t show our injected video ads.</p>
+<p>We all know front-end project needs to optimize its performance. In general, it is about code compression, code combination and a series of related tasks we call them build flow. You will find that in a ‘Single Page Application’ we usually only have one final javascript file. Even though it might be large, we only need load the file once during users access the app(SPA).</p>
+<p>However, multiple pages website cannot do the same way. That’s because each page we want to redirect will reload all scripts again. That’s one of the reasons why a multiple-page website will load scripts separately.</p>
+<p>Another important reason is that in software architecture, the best practice to maintain a large project is dicing the code to different bulks. We call the bulks Modules. A module could be separated by business logic, object-oriented design, and a particular architecture(e.g. we use Component Architecture in KDP). So that for a front-end project, there are dozens/hundreds of modules under the hood. In SPA, they could be combined to a final script. As for multiple-page websites, they don’t have the similar condition to use the same way, so they have to load multiple scripts in every page of themselves.</p>
+<p>Then the Question comes, if they have to load multiple scripts, how could they solve so many critical problems like circular dependency, lazy load, and concurrency order.</p>
+<p>To solve the problem, Javascript Communities published more than three Modular Standards during 2013 - 2015. They are AMD, CMD, and CommonJS. They all are similar Modular Standard and have been implemented by a bunch of Module Loader libraries.</p>
+<p>So the multiple-page websites we can see, they might use any of Modular Standards. If a multiple-page website doesn’t use any modular architecture, it would be an incredible nightmare.</p>
+<p>These content above are necessary knowledge to know our issue about why there are some websites didn’t show the Video Ads.</p>
+<p>Except for the part of websites that didn’t show the Video Ads just because of bad network. Other websites all use AMD modular standard.</p>
+<p>In our Injection code, we modified a famous 3rd-party library called Hammar.js and imported it to our code. The Hammar.js supports AMD/CMD/CommonJS and a global object(refer to ‘window’ in browsers environment).</p>
+<p>Unfortunately, the guy who wrote the shitty code didn’t know anything about the Modular Standard. He changed the Hammar.js, but he didn’t implement the module of AMD/CMD/CommonJS. That means he just stuck everything into a global object(window). It is an amateurish way, and it has been proved dangerous code by communities.</p>
+<p>The code of Video Ads uses the Hammer.js. That’s why we cannot see Video Ads on some websites which are using AMD standard. When we access them, the Hammar.js will find the current website is using AMD, but our code doesn’t implement the related module. So our code cannot find anything from the undefined/empty module. Then it breaks without any error.</p>
+<p>At the mean time, I was shocked with there is no any code to throw or catch the related error, that’s why we cannot easy to find the reason. Also, another shocking thing is our injection code will repeatedly be invoked every 25 ms if the bug is triggered! Only primary school student could write code like that.</p>
+<p>I saw the code and feel there are many bugs will come in the future. And we will waste our time and difficult to find those bugs again and again. To fix bugs on it is even harder than rewrite a new one, it also will take more time. Quality takes some time. Right architecture takes some time. Project workflow takes some time. But all of them won’t take us dive into hell at someday when we meet issues. So don’t be short-sighted and don’t think the shitty code works well. This terrible thought will take a technical company to die, and it also shouldn’t be spoken from a real software engineer.</p>
+<p>thanks,<br>Yang</p>
+<p><em>Pls comment on the relative Issue of this journal on my Github, any advice would be appreciated!</em></p>
+
+    </div>
+
+    
+
+    
+        <div class="post-tags">
+            <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/Quality/">#Quality</a> <a href="/tags/Architecture/">#Architecture</a> <a href="/tags/Email/">#Email</a> <a href="/tags/Legacy-Code/">#Legacy Code</a>
+        </div>
+    
+
+    <!-- Comments -->
+    
+    <div class="comments">
+        
+
+
+    </div>
+    
+
+</div>
+
+        </section>
+
+    </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    All of themes are shit on Hexo except this funny one. Thanks for the desinger Jonathan Klughertz. So that I could use it to leverage my journals performed better.
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" href="/2016/11/16/Legacy-Code-Leads-Me-To-Hell/">Legacy Code Leads Me To H</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2016/11/15/Review-For-Knowledge/">Review For Knowledge</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2016/11/14/Feel-Boring-Again/">Feel Boring Again</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2016/11/13/Be-Kind/">Be Kind</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 footer-categories">
+    <h2>Categories</h2>
+    <ul>
+        
+        <li>
+            <a class="footer-post" href="/categories/Journal/">Journal</a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/abruzzihraig/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="mailto:abruzzi.hraig@gmail.com">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    Thanks for the guy's design <a href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+<script src="/js/main.js"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
