@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="A journal for the road">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Yang He">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Gettext Will Fix You"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="A journal for the road" />
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Road To Revenge"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Gettext Will Fix You - Road To Revenge</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
+        
+    </div>
+</header>
+
+        <section class="main">
+            
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/2016/11/20/Gettext-Will-Fix-You/">
+                Gettext Will Fix You
+            </a>
+        </h1>
+        <div class="post-info">
+            <span class="date">2016-11-20</span>
+            <a href="https://github.com/abruzzihraig/road-for-revenge/issues/112" target="_blank" class="comments article-comment-link">review</a>
+
+            
+            
+                <span class="category">
+                    <a href="/categories/Journal/">Journal</a>
+                </span>
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <p>My friend Dolphin analyzed my journals and found the keyword ‘game’ comes more than 50 times(But actually it just exists in 30 articles). No matter what it makes me awkward. Then I did the same thing and found more than 20 articles related to Dark Souls. Known that made me feel innocent, because the DarkSouls series(includes Bloodborne) are entirely arts, and Hidetaka Miyazaki is the best genius in video game creating. I don’t mind if I will pay more than three hundred hours on each game from him.</p>
+<p>Meanwhile, I really want to do some significant stuff for myself. Because I don’t want someday when I become old will be test human nature from family or society then, I don’t want to see the scenario just due to lack of money. Hope everyone I met will keep kindness forever. Hope each friend I met will not become a man/woman like a scheming questioner in Zhihu. I’ve already seen much sorrow in the first half of my life.</p>
+<p>Nearly night, a friend asked me why I choose GNU Gettext to handle internationalization on the web rather than a typical dictionary solution. I thought a little and answered to him that GNU Gettext has three advantages than a dictionary. They are context, plural, and interpolation. I thought my reply is the key point to explain another similar question why we will choose GNU Gettext.</p>
+<p>I know you can make a dictionary better and add some useful features to your personal solution, and it even might be better than GNU Gettext. But the GNU Gettext is just a standard. It thinks more than a regular developer. The difference is just like why we choose to use OAuth.</p>
+<p>The GNU Gettext supports context, which means you can control every word you want to translate in an accurate context. For example, the same word in English could have a different meaning in other languages, so that the same English word displayed on different pages may need to translate to a different word in other languages.</p>
+<p>The ‘plural’ question has a little bit of like the context above. Some languages are sensitive with singular and plural. For example, in English, we use the form ‘one day’ but ‘two days.’ However, in Chinese, they are same with ‘N 天’.</p>
+<p>As for the interpolation, you might have already guessed what does the Gettext do. Different languages may have different grammar, and the various grammar form could have different structure and order in one sentence. So in GNU Gettext you could use a sentence with interpolation as a key of the original dictionary, it usually is English dictionary. Especially when you write something like ‘Hello ‘ in English, but you want to change the structure in Chinese like ‘, 你好.’</p>
+<p>Another benefit from GNU Gettext is there are lots of PO editors you could use for editing different language dictionaries.</p>
+<p>That’s why I recommend developers to use the standard GNU Gettext to handle internationalization rather than recreate another solution by themselves with some traps.</p>
+<p>Time to sleep, Good night!</p>
+<p><em>Pls comment on the relative Issue of this journal on my Github, any advice would be appreciated!</em></p>
+
+    </div>
+
+    
+
+    
+        <div class="post-tags">
+            <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/I18N/">#I18N</a> <a href="/tags/Gettext/">#Gettext</a> <a href="/tags/GNU/">#GNU</a>
+        </div>
+    
+
+    <!-- Comments -->
+    
+    <div class="comments">
+        
+
+
+    </div>
+    
+
+</div>
+
+        </section>
+
+    </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    All of themes are shit on Hexo except this funny one. Thanks for the desinger Jonathan Klughertz. So that I could use it to leverage my journals performed better.
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" href="/2016/11/20/Gettext-Will-Fix-You/">Gettext Will Fix You</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2016/11/19/Indoorsy/">Indoorsy</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2016/11/18/Entertainment/">Entertainment</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2016/11/17/Lack-Of-Sleep/">Lack Of Sleep</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 footer-categories">
+    <h2>Categories</h2>
+    <ul>
+        
+        <li>
+            <a class="footer-post" href="/categories/Journal/">Journal</a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/abruzzihraig/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="mailto:abruzzi.hraig@gmail.com">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    Thanks for the guy's design <a href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+<script src="/js/main.js"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
