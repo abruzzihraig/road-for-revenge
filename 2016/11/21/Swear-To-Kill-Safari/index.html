@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="A journal for the road">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Yang He">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Swear To Kill Safari"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="A journal for the road" />
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Road To Revenge"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Swear To Kill Safari - Road To Revenge</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
+        
+    </div>
+</header>
+
+        <section class="main">
+            
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/2016/11/21/Swear-To-Kill-Safari/">
+                Swear To Kill Safari
+            </a>
+        </h1>
+        <div class="post-info">
+            <span class="date">2016-11-21</span>
+            <a href="https://github.com/abruzzihraig/road-for-revenge/issues/113" target="_blank" class="comments article-comment-link">review</a>
+
+            
+            
+                <span class="category">
+                    <a href="/categories/Journal/">Journal</a>
+                </span>
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <p>‘Safari is another Internet Explorer’ is not a joke. I paid a whole day for a weird issue on iOS Safari. And now I still don’t have any clue on it. I almost get insane.</p>
+<p>The issue mainly occurs on my Boss’s iPhone 6 Plus. When use his iPhone 6 Plus to access my website, and fetched an artwork list then try to open one of them with the image editor, the website will break and reload suddenly. It initially didn’t show on my iPhone 6S. I guessed that’s because my iPhone 6S has a more powerful hardware than iPhone 6 Plus, and maybe the iPhone 6 Plus breaks due to lack of RAM.</p>
+<p>However, I borrowed iPhone 5 and iPhone 5C from other colleagues to try to test the issue, and they both didn’t get crashed unexpectedly. The result totally confused me: Why the iPhone 6 Plus will break more frequently but iPhone 5 won’t?</p>
+<p>As I mentioned above, iPhone 6 Plus will break almost every time. But that doesn’t mean the iPhone 5, iPhone 5C, and iPhone 6s won’t crash. They just occur the issue with a lower frequency.</p>
+<p>The most complicated problem is that the issue occurs randomly. When I fetch more than 100 artworks data(each item only includes some necessary data), all devices will have a high frequency to crash. The iPhone 6S is relatively safe.</p>
+<p>When I try to fetch 20 artworks data, the device iPhone 5, iPhone 5C and iPhone 6S won’t break except for the iPhone 6 Plus.</p>
+<p>When I try to get only five artworks, all of them will be fine. Of course, it is a relative ‘fine.’ There is no way to prevent the crashing entirely.</p>
+<p>Don’t think the weird issue just occurs in the process when fetching artwork data. When we try to fetch 20 artworks and every device looks fine, then pick up one of them and open it with the Image Editor, you will see the iPhone 6 Plus will totally break. As for iPhone 5 and iPhone 5C will have a medium frequency to crash. Only iPhone 6S will live longer.</p>
+<p>In Chinese, we call the issue bug of mystery. I know when open image editor, it will load a JSON object with a base64 dataUrl, it will occupy more memory in a browser. Most of the time the iPhone 6 Plus crashes on this step. After edited the final artwork and ready to save and close the image editor, the image editor will export dataUrl from the canvas. And that would be another memory-waste operation. It will make some iPhones crashed as well.</p>
+<p>It sounds like the memory runs out, right? But after my friend Dolphin helped me to reduce the memory usage with Blob object and window.URL instead of base64 dataUrl. The crash issue still occurs randomly. I even want to buy my boss another new iPhone. Why does the fucking Safari on iPhone 6 Plus have such thorny problem? Why doesn’t Apple care about its shit? I nearly took seventy percent of the time to find and to fix the issues on Safari in this project.</p>
+<p>Am I wrong to make the content rich? Why you Apple with your shitty Safari always obstructs we front-end guys to build a website better? Why you always have so many issues on your platform and turn a blind eye on it?</p>
+<p>I will witness you collapse at someday.</p>
+<p><em>Pls comment on the relative Issue of this journal on my Github, any advice would be appreciated!</em></p>
+
+    </div>
+
+    
+
+    
+        <div class="post-tags">
+            <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/Apple/">#Apple</a> <a href="/tags/Safari/">#Safari</a> <a href="/tags/iOS/">#iOS</a> <a href="/tags/Bug/">#Bug</a>
+        </div>
+    
+
+    <!-- Comments -->
+    
+    <div class="comments">
+        
+
+
+    </div>
+    
+
+</div>
+
+        </section>
+
+    </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    All of themes are shit on Hexo except this funny one. Thanks for the desinger Jonathan Klughertz. So that I could use it to leverage my journals performed better.
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" href="/2016/11/21/Swear-To-Kill-Safari/">Swear To Kill Safari</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2016/11/20/Gettext-Will-Fix-You/">Gettext Will Fix You</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2016/11/19/Indoorsy/">Indoorsy</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2016/11/18/Entertainment/">Entertainment</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 footer-categories">
+    <h2>Categories</h2>
+    <ul>
+        
+        <li>
+            <a class="footer-post" href="/categories/Journal/">Journal</a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/abruzzihraig/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="mailto:abruzzi.hraig@gmail.com">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    Thanks for the guy's design <a href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+<script src="/js/main.js"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
