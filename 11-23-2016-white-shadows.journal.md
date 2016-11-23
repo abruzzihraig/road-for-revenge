@@ -1,0 +1,6 @@
+### White Shadows
+Every day, I feel full of passion to work, and I always set a promise for myself during walking to the office. I said to myself at tonight I should write some code for my fancy stuff. And I even think about the structure of my personal project every morning. But once I got home, I wouldn't  want to do anything about coding. I don't know why I am so resisted to work on my personal stuff. I mean programming is always attractive to me, I feel enjoyable when coding. However, I just do not want to write code in the evening. I know that is harmful to my life, but I still cannot get rid of it.
+
+More than three months I have not written my image editor. And I feel it worse as time flies, the feeling is terrible to me. There is nothing significant on my Github, and I even do not want to tell anyone my account, because I feel shameful, there is nothing worth to show. I have pursuit and taste, and I really want to make craft high-quality and elegant. But I always let myself down.
+
+No one can save myself until I break it up. Hope someday I could continue to work on my image editor, there will be a bunch of stuff need to refactor. I don't care about if anyone will use it. But that is an artwork to myself, and it is a promise as well. Get away from the white shadows.
