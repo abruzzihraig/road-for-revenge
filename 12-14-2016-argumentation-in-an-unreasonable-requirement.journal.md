@@ -6,7 +6,7 @@ I'm totally opposed what you said.
 
 It's not just about if we could implement it, and also it is how we design and maintain the product.
 
-If for each requirement we just accept it without thinking and implement it directly, I could say I can implement everything by your requirements. I really want to spend a whole afternoon to argue with this obvious issue.
+If for each requirement we just accept it without thinking and implement it directly, I could say I can implement everything by your requirements. I really don't want to spend a whole afternoon to argue with this obvious issue.
 
 For the 1, please thinking why we have this auto-generated title? The title should be an important info which defined by users. And for preventing they stuck from the validation which could block them to go to the next page, then we add an auto-generated hash title as a placeholder for better User Experience. This is why it was brought here.
 
