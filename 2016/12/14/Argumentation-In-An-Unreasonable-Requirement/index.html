@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="A journal for the road">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Yang He">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Argumentation In An Unreasonable Requirement"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="A journal for the road" />
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Road To Revenge"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Argumentation In An Unreasonable Requirement - Road To Revenge</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
+        
+    </div>
+</header>
+
+        <section class="main">
+            
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/2016/12/14/Argumentation-In-An-Unreasonable-Requirement/">
+                Argumentation In An Unreasonable Requirement
+            </a>
+        </h1>
+        <div class="post-info">
+            <span class="date">2016-12-14</span>
+            <a href="https://github.com/abruzzihraig/road-for-revenge/issues/136" target="_blank" class="comments article-comment-link">review</a>
+
+            
+            
+                <span class="category">
+                    <a href="/categories/Journal/">Journal</a>
+                </span>
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <blockquote>
+<p>Just record a boring argument with our tester. The tester wants me keep an auto-generate ad title as {adType MM/dd/yyyy hh:mm} (e.g. “Small 12/23/2016 12:54“). And I nearly got insane with the silly requirement.</p>
+</blockquote>
+<p>I’m totally opposed what you said.</p>
+<p>It’s not just about if we could implement it, and also it is how we design and maintain the product.</p>
+<p>If for each requirement we just accept it without thinking and implement it directly, I could say I can implement everything by your requirements. I really want to spend a whole afternoon to argue with this obvious issue.</p>
+<p>For the 1, please thinking why we have this auto-generated title? The title should be an important info which defined by users. And for preventing they stuck from the validation which could block them to go to the next page, then we add an auto-generated hash title as a placeholder for better User Experience. This is why it was brought here.</p>
+<p>If it is a normal user, and he/she cares about their ads and they really want to manage the ads, they won’t create any duplicated title because that would make them confusing someday. And that is also why we used the UNIQUE ID for generating those titles.</p>
+<p>And now, you think the title is not user-friendly so require us to make it semantic. Yes, it is reasonable, but please note how the requirement steps up? And what is the basic reason for it exists? It is a UNIQUE and AUTO-GENERATED title as a PLACEHOLDER for preventing blocked users from the form validation, rather than making it user-friendly and making it as semantic as possible.</p>
+<p>If a user really cares about the perfect semantic value format like “Small 2016/09/12 23:12:22”, why they didn’t create it by themselves? The placeholder just includes a part of the important and semantic information to help those users someday they actually need those information–those users who are lazy and don’t really care about and manage their ads.</p>
+<p>If they actually need the information someday, I don’t believe they cannot get them from a title like {320x50-2016-09-12-23-12-22}.</p>
+<p>And why I think it shouldn’t include SLASH, COLON, and the SPACE among them? That’s because I just do more fortifications for preventing changing our code if someday we get a new requirement which influenced by it. Have you seen any format like {Small 2016/09/12 23:12:22} as a filename in your file system? Have you seen the format in URL? Have you seen the format in any username or a form placeholder? The format {320x50-2016-09-12-23-12-22} is program-friendly, it could be parsed easily by any new requirement, and it also prevents some side effects without the special character. If we need to host them someday in a file system, it works fine, and each title by the same user is unique.</p>
+<p>For the 2, this is an absolutely bad idea to me that to use the inaccurate words such as “Small” or “Large” to indicate different Ads type. What is the “Small” and what is the “Large”? They are relative units for measuring. Imagine if we have two Ad types like “300x200” and “200x300”, could you tell me which is called “Small” and which is Called “Large”? If we add a new Ad Type “800x600”, You said maybe we could make the “800x600” “Large” and change the previous “Large” one to “Medium”, but can you feel the risk to change those code again and again with those new simple requirements?</p>
+<p>If we have three types like “320x50”, “300x250”, “320x250”, how could you distinguish them with those relative measure words?</p>
+<p>I tried to think why there are “Small” and “Large” on our website, maybe someone just thinks it is better on User Experience, but it is unresponsible words for indicating Ad types. And it will make us got trouble in the future. Why don’t we prevent it? Xibo told me there could be a mistake in a previous design that there were only words “Small” and “Large” in the form options. But in the current design, everywhere the “Small” and “Large” exist must be followed by a particular size like “(320x 50)”. That is a right design.</p>
+<p>As for different languages, for different region use different languages on the auto-generated title? Why we need to do that??? Why we have to make the thing difficult and ugly for this simple requirement. This is a PATCH rather than a wise solution.</p>
+<p>This logic shouldn’t depend on a specific UI context. The logic is independent although there is a size type below the title in an Ad Item. It is a principle how we maintain our product with new requirment–do not couple different logic and make them as independent as possible. Otherwise, one modification will bring lots of new issues.</p>
+<p><em>Pls comment on the relative Issue of this journal on my Github, any advice would be appreciated!</em></p>
+
+    </div>
+
+    
+
+    
+        <div class="post-tags">
+            <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/Argument/">#Argument</a> <a href="/tags/Tester/">#Tester</a>
+        </div>
+    
+
+    <!-- Comments -->
+    
+    <div class="comments">
+        
+
+
+    </div>
+    
+
+</div>
+
+        </section>
+
+    </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    All of themes are shit on Hexo except this funny one. Thanks for the desinger Jonathan Klughertz. So that I could use it to leverage my journals performed better.
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" href="/2016/12/14/Argumentation-In-An-Unreasonable-Requirement/">Argumentation In An Unrea</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2016/12/13/As-Normal/">As Normal</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2016/12/12/This-Is-Your-Package/">This Is Your Package</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2016/12/11/Passed-Bloodborne/">Passed Bloodborne</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 footer-categories">
+    <h2>Categories</h2>
+    <ul>
+        
+        <li>
+            <a class="footer-post" href="/categories/Journal/">Journal</a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/abruzzihraig/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="mailto:abruzzi.hraig@gmail.com">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    Thanks for the guy's design <a href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+<script src="/js/main.js"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
