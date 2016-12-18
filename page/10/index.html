@@ -127,6 +127,46 @@
 
     <div class="post-header index">
         <h1 class="title">
+            <a href="/2016/09/19/Long-May-The-Gettext/">
+                Long May The Gettext
+            </a>
+        </h1>
+        <div class="post-info">
+            <span class="date">2016-09-19</span>
+            <a href="https://github.com/abruzzihraig/road-for-revenge/issues/50" target="_blank" class="comments article-comment-link">review</a>
+            
+            
+                <span class="category">
+                    <a href="/categories/Journal/">Journal</a>
+                </span>
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <p>I have to say the GNU Gettext is the best i18n solution I have never seen before.</p>
+<p>Actually, at the end of my last work, my team had already used the Gettext to handle multiple languages then. But I didn’t do anything core about it, so I just remembered that is a kind of multi-language solution.</p>
+<p>This week my task is to integrate a i18n solution to our project. Since I have already known the Gettext is the well-known standard, so how can I stand using a silly flow by writing different languages on an Excel?</p>
+<p>So that in the afternoon, I tried to add two loaders about Angular Gettext to the Webpack flow we have already used. One loader for extracting language keys from our code, another for compiling language map files into the original code. That is easy to understand the whole cycle.</p>
+<p>The files we need to edit are called PO files. Any PO file could be one of languages that used to a project.</p>
+<p>And there is another important file named POT. The POT file is a template that created by extracting all of essential key words from the code. Anytime you defined a new word in code need to be translated, the POT file would be updated automatically by the Webpack flow. That’s the loaders’ credit.</p>
+<p>The rest thing you need to do is just to update PO file from the template POT, then the PO file will add some new fields could be translated. When you edit the new fields and save it, the Webpack will do us a favour to compile them into our code again. So that you can see the change immediately on a browser.</p>
+<p>The whole process is friendly without any pain. There is another incomparable feature is that you even could use a true human translating in the editor Poedit. That means every key word you are translating could be used for fetching a list of translation suggestions from cloud. Even if more suggestions are hidden unless you get a pro version. I think that is enough for translating.</p>
+<p>How perfect solution for the multiple languages, I wish anyone who has the same requirements about internationalisation could try it. Then you will be grateful and satisfied.</p>
+<p><em>Pls comment on the relative Issue of this journal on my Github, any advice would be appreciated!</em></p>
+
+        </div>
+    
+
+</div>
+
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
             <a href="/2016/09/18/English-Speaking-It-Hurts/">
                 English Speaking It Hurts
             </a>
@@ -465,40 +505,6 @@
 </div>
 
             
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2016/09/09/Gaming-Day/">
-                Gaming Day
-            </a>
-        </h1>
-        <div class="post-info">
-            <span class="date">2016-09-09</span>
-            <a href="https://github.com/abruzzihraig/road-for-revenge/issues/40" target="_blank" class="comments article-comment-link">review</a>
-            
-            
-                <span class="category">
-                    <a href="/categories/Journal/">Journal</a>
-                </span>
-            
-        </div>
-    </div>
-
-    
-        <div class="content">
-            <p>Sorry guys I was lost today. I was playing the game Dark Souls 3 whole day until 4 a.m. That makes me satisfied.</p>
-<p>Actually, I just killed the three golden angels on top of the final tower hundreds of times, to gain more souls for preparing the new game plus.</p>
-<p>My head is dizzy, and I cannot write anymore. Sleeping! Bye!</p>
-<p><em>Pls comment on the relative Issue of this journal on my Github, any advice would be appreciated!</em></p>
-
-        </div>
-    
-
-</div>
-
-            
         </section>
     </div>
 </div>
@@ -541,6 +547,10 @@
         <ul>
             
             <li>
+                <a class="footer-post" href="/2016/12/18/The-Handmaiden/">The Handmaiden</a>
+            </li>
+            
+            <li>
                 <a class="footer-post" href="/2016/12/17/Guilt-For-Luxurious-Stuff/">Guilt For Luxurious Stuff</a>
             </li>
             
@@ -550,10 +560,6 @@
             
             <li>
                 <a class="footer-post" href="/2016/12/15/Endless-Argument/">Endless Argument</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2016/12/14/Argumentation-In-An-Unreasonable-Requirement/">Argumentation In An Unrea</a>
             </li>
             
         </ul>
