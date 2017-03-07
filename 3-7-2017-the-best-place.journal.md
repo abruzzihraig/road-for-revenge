@@ -1,0 +1,8 @@
+### The Best Place
+I did practice on daily English speaking just now. There is a question to describe hometown or any other cities I used to live. So I brought the question to here to try to find out more differences among wherever I lived.
+
+I’ve been living in my hometown for about eighteen years. It’s a tiny city, and it’s near huge mountains, so the surrounding areas are quite beautiful. However, the city hasn’t changed much in the last twenty years. That's because there were so many safety issues around. The city named Yining, and it is made up by a dozen of different nations. Some of the nations there are more like East European so that the different cultures might cause some conflicts. So we went through a series of terrorist attacks during this twenty years. It prevented economy and development for a long period.
+
+After I had gone to study in college, I lived in Beijing for about six years. Beijing is a great bustling city, even though sometimes it has an air issue. The city is 24-hour so that you can find any service conveniently. But I finally choose to leave there, because it is exhausting to live, you have to think about how to earn much every day. The traffic issue also hit me. I even need to spend more than three hours per day on the road to work.
+
+Now I am living in Melbourne. It is a quite sleepy city. It hasn’t much nightlife like Beijing. You can find everywhere is natural and peaceful. Whereas the cost of living here is really high, it’s expensive than it used to be. I am trying to learn more about this city until l can get another opportunity to elsewhere.
