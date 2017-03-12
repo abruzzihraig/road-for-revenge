@@ -127,6 +127,42 @@
 
     <div class="post-header index">
         <h1 class="title">
+            <a href="/2017/03/02/Back-To-Type/">
+                Back To Type
+            </a>
+        </h1>
+        <div class="post-info">
+            <span class="date">2017-03-02</span>
+            <a href="https://github.com/abruzzihraig/road-for-revenge/issues/191" target="_blank" class="comments article-comment-link">review</a>
+            
+            
+                <span class="category">
+                    <a href="/categories/Journal/">Journal</a>
+                </span>
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <p>These days I come back to the strongly typed programming language again—the TypeScript. I tried to learn and use it to refactor my previous work, but the main purpose of using that is just a preparation for the coming Angular2/4 that we are going to use.</p>
+<p>I’m not sure if which one I would prefer between the languages have strongly type and weakly type. I like both of them, but I do not like using strongly typed language with a kind of complicated ritual sense.</p>
+<p>The type checking could help us find more errors or bugs before the code is being compiled, it has huge advantages for a large front-end project. And also, using TypeScript instead of ECMAScript could get more code intelligence from the modern editors. You can easily check function signatures, and find the references to the properties which are exported. That is really helpful when you want to refactor your code.</p>
+<p>With type and interface, we could separate tasks more friendly if we are working on the same project. Define an interface and implement it as its shape. Although we only have two guys will work on front-end, it is still an excellent opportunity to learn something new. That is important to us if we want to find another job. I would also need to learn Angular 2 more after the TypeScript.</p>
+<p>Keep practice is the best way to master a language.</p>
+<p><em>Pls comment on the relative Issue of this journal on my Github, any advice would be appreciated!</em></p>
+
+        </div>
+    
+
+</div>
+
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
             <a href="/2017/03/01/Gaming-Night/">
                 Gaming Night
             </a>
@@ -421,74 +457,6 @@
 </div>
 
             
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2017/02/21/Note-Of-NG2—The-Difference-Between-AOT-And-JIT/">
-                Note Of NG2—The Difference Between AOT And JIT
-            </a>
-        </h1>
-        <div class="post-info">
-            <span class="date">2017-02-21</span>
-            <a href="https://github.com/abruzzihraig/road-for-revenge/issues/182" target="_blank" class="comments article-comment-link">review</a>
-            
-            
-                <span class="category">
-                    <a href="/categories/Journal/">Journal</a>
-                </span>
-            
-        </div>
-    </div>
-
-    
-        <div class="content">
-            <p>I made some note by my understood from reading the cookbook of NG2 today. </p>
-<p>Here is the note below:</p>
-<p>AOT: Ahead of time<br>For compiling code before any browser load it. Used in Production.</p>
-<p>Related:</p>
-<ol>
-<li>Rollup: The utility that do tree shaking. It only cares modules that have Import and Export statements.</li>
-<li>ngc: A compiler that provided in the @angular/compiler-cli instead of the Typescript compiler. It has better performance than Typescript compiler for AOT mode in Angular2 application.</li>
-<li>source-map-explorer: Analyse the source map generated with the bundle and draws a map of all dependencies.</li>
-</ol>
-<p>Advantage:</p>
-<ol>
-<li>Could reduce the HTTP requests of those resources which are individual dependencies.</li>
-<li>Could do tree shaking to reduce unused portions of both source and library code.</li>
-<li>Could improve the speed of loading and executing when first load the application with JIT.</li>
-<li>Could uglify and mangle the final code.</li>
-<li>It only produces one bundle script.</li>
-</ol>
-<p>Disadvantage:</p>
-<ol>
-<li>Not be friendly with dev mode, it will be slower when the application code larger. And every time we modified the code, it has to be compiled entirely again. It will take a several seconds or more.</li>
-</ol>
-<p>JIT: Just in time<br>For compiling the app in browser runtime when it loads. Used in Development.</p>
-<p>Related:</p>
-<ol>
-<li>SystemJS: It’s a ES module loader, and it could load any module format.</li>
-</ol>
-<p>Advantage:</p>
-<ol>
-<li>It is faster than compile everything in AOT mode so that it is better for the stage development.</li>
-</ol>
-<p>Disadvantage:</p>
-<ol>
-<li>It relies on a browser runtime to compile everything after the source code loaded. That will delay the time could start to use by users.</li>
-<li>It needs the angular compiler in browser, and the compiler is large and nearly equals to half size of the whole application code.</li>
-<li>It uses SystemJS to load multiple sources such as templates, css and JS files. It might slower than only one bundle file being loaded.</li>
-</ol>
-<p>By the way, it’s the first time I use Keep today.</p>
-<p><em>Pls comment on the relative Issue of this journal on my Github, any advice would be appreciated!</em></p>
-
-        </div>
-    
-
-</div>
-
-            
         </section>
     </div>
 </div>
@@ -531,6 +499,10 @@
         <ul>
             
             <li>
+                <a class="footer-post" href="/2017/03/12/Make-Community-Worse/">Make Community Worse</a>
+            </li>
+            
+            <li>
                 <a class="footer-post" href="/2017/03/11/Be-Decadent-Again/">Be Decadent Again</a>
             </li>
             
@@ -540,10 +512,6 @@
             
             <li>
                 <a class="footer-post" href="/2017/03/09/Normal-Positive-Day/">Normal Positive Day</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2017/03/08/Professionalism/">Professionalism</a>
             </li>
             
         </ul>
