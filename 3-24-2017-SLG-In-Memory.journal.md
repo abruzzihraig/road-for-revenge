@@ -1,0 +1,2 @@
+### SLG In Memory
+I am so sleepy now. I was playing a fantastic game a whole night. The game is the remastered version of the classical SLG game–Sangokushi Sousouden, but this time it becomes with a bunch of online features. The game was published in 1999. As a child then, I at least passed it more than three times. Now the new version is still created by Koei, It brings the exciting memory from my childhood. If you have the same game experience with me, I cannot say much, please try it.
