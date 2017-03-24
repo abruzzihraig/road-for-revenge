@@ -127,6 +127,49 @@
 
     <div class="post-header index">
         <h1 class="title">
+            <a href="/2016/11/21/Swear-To-Kill-Safari/">
+                Swear To Kill Safari
+            </a>
+        </h1>
+        <div class="post-info">
+            <span class="date">2016-11-21</span>
+            <a href="https://github.com/abruzzihraig/road-for-revenge/issues/113" target="_blank" class="comments article-comment-link">review</a>
+            
+            
+                <span class="category">
+                    <a href="/categories/Journal/">Journal</a>
+                </span>
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <p>‘Safari is another Internet Explorer’ is not a joke. I paid a whole day for a weird issue on iOS Safari. And now I still don’t have any clue on it. I almost get insane.</p>
+<p>The issue mainly occurs on my Boss’s iPhone 6 Plus. When use his iPhone 6 Plus to access my website, and fetched an artwork list then try to open one of them with the image editor, the website will break and reload suddenly. It initially didn’t show on my iPhone 6S. I guessed that’s because my iPhone 6S has a more powerful hardware than iPhone 6 Plus, and maybe the iPhone 6 Plus breaks due to lack of RAM.</p>
+<p>However, I borrowed iPhone 5 and iPhone 5C from other colleagues to try to test the issue, and they both didn’t get crashed unexpectedly. The result totally confused me: Why the iPhone 6 Plus will break more frequently but iPhone 5 won’t?</p>
+<p>As I mentioned above, iPhone 6 Plus will break almost every time. But that doesn’t mean the iPhone 5, iPhone 5C, and iPhone 6s won’t crash. They just occur the issue with a lower frequency.</p>
+<p>The most complicated problem is that the issue occurs randomly. When I fetch more than 100 artworks data(each item only includes some necessary data), all devices will have a high frequency to crash. The iPhone 6S is relatively safe.</p>
+<p>When I try to fetch 20 artworks data, the device iPhone 5, iPhone 5C and iPhone 6S won’t break except for the iPhone 6 Plus.</p>
+<p>When I try to get only five artworks, all of them will be fine. Of course, it is a relative ‘fine.’ There is no way to prevent the crashing entirely.</p>
+<p>Don’t think the weird issue just occurs in the process when fetching artwork data. When we try to fetch 20 artworks and every device looks fine, then pick up one of them and open it with the Image Editor, you will see the iPhone 6 Plus will totally break. As for iPhone 5 and iPhone 5C will have a medium frequency to crash. Only iPhone 6S will live longer.</p>
+<p>In Chinese, we call the issue bug of mystery. I know when open image editor, it will load a JSON object with a base64 dataUrl, it will occupy more memory in a browser. Most of the time the iPhone 6 Plus crashes on this step. After edited the final artwork and ready to save and close the image editor, the image editor will export dataUrl from the canvas. And that would be another memory-waste operation. It will make some iPhones crashed as well.</p>
+<p>It sounds like the memory runs out, right? But after my friend Dolphin helped me to reduce the memory usage with Blob object and window.URL instead of base64 dataUrl. The crash issue still occurs randomly. I even want to buy my boss another new iPhone. Why does the fucking Safari on iPhone 6 Plus have such thorny problem? Why doesn’t Apple care about its shit? I nearly took seventy percent of the time to find and to fix the issues on Safari in this project.</p>
+<p>Am I wrong to make the content rich? Why you Apple with your shitty Safari always obstructs we front-end guys to build a website better? Why you always have so many issues on your platform and turn a blind eye on it?</p>
+<p>I will witness you collapse at someday.</p>
+<p><em>Pls comment on the relative Issue of this journal on my Github, any advice would be appreciated!</em></p>
+
+        </div>
+    
+
+</div>
+
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
             <a href="/2016/11/20/Gettext-Will-Fix-You/">
                 Gettext Will Fix You
             </a>
@@ -455,43 +498,6 @@
 </div>
 
             
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2016/11/11/Black-Mirror-Is-Watching-You/">
-                Black Mirror Is Watching You
-            </a>
-        </h1>
-        <div class="post-info">
-            <span class="date">2016-11-11</span>
-            <a href="https://github.com/abruzzihraig/road-for-revenge/issues/103" target="_blank" class="comments article-comment-link">review</a>
-            
-            
-                <span class="category">
-                    <a href="/categories/Journal/">Journal</a>
-                </span>
-            
-        </div>
-    </div>
-
-    
-        <div class="content">
-            <p>I cannot believe that I was learning the whole night. I read some technical articles, read some documents on MDN, and tried to solve some Katas on Codewars. How positive I am! Unexpectedly I didn’t play games at the Friday night.</p>
-<p>Before I did those boring but positive stuff, I watched the rest episodes of the Black Mirror I’ve not watched yet. And I have to say the Black Mirror is an incredible drama.</p>
-<p>The last episode which impresses me a lot. It describes how we use AI in our future society, and how dangerous it is.</p>
-<p>A company uses high technology to create a race of simulated bees. Tens of thousands bees just like the native bees to help flowers and plants be pollened. But a genius criminal hacked the bees then used them to attack somebody who was considered and selected by the internet users. If they dislike someone, they just vote and curse for him/her to die on a social app just like Twitter. The victim who gets the highest votes in one day will be killed by those bees.</p>
-<p>The most shocking part is in the end, the bees killed all of the people who once has cursed someone on the network. It caused more than hundreds of thousands people die.</p>
-<p>It is a kind of irony in our network society. Everyone hides behind the screen but exposes violence to someone. Public figures are always being attacked, and more and more of them are choosing to kill themselves. It is indeed the current social tragedy.</p>
-<p><em>Pls comment on the relative Issue of this journal on my Github, any advice would be appreciated!</em></p>
-
-        </div>
-    
-
-</div>
-
-            
         </section>
     </div>
 </div>
@@ -534,6 +540,10 @@
         <ul>
             
             <li>
+                <a class="footer-post" href="/2017/03/24/SLG-In-Memory/">SLG In Memory</a>
+            </li>
+            
+            <li>
                 <a class="footer-post" href="/2017/03/23/Kimchi-Noodle-Nearly-Killed-Me/">Kimchi Noodle Nearly Kill</a>
             </li>
             
@@ -543,10 +553,6 @@
             
             <li>
                 <a class="footer-post" href="/2017/03/21/Talking/">Talking</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2017/03/20/Waist-Pain/">Waist Pain</a>
             </li>
             
         </ul>
