@@ -1,0 +1,4 @@
+### New Challenge
+Will come back to work tomorrow, and there will be a new challenge is waiting for me. Our clients need a micro service as a web app that could generate a dynamic website. The target users could drag and insert any element that the service supports on the web app, and layout those elements by themselves, finally making the website like what they expect.
+
+There will be a meeting for discussing those requirements and features on the new project. It is an actually funny project with a little bit challenge. I’m interested in it and want to make the stuff awesome. If there would be a plan on it, I might use the stack Redux/React to construct the web app. That’s because the service is a kind of editor and it has to support Redo&Undo, that means there should be a state machine to manage the states among all of the user operations.
