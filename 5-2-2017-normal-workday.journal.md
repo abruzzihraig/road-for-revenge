@@ -1,0 +1,2 @@
+### Normal Workday
+It’s nearly 3 a.m. I have to go bed. There’s nothing needs to record today. I read the document of MobX a bit, and I found it is intuitive indeed. I’ll dive into it more this week to decide if MobX is the most appropriate state management framework for my next project. Another good news for me is our team won’t support the browser version below IE 11 anymore. I finally don’t need to care about the shitty object XDomainRequest in outdated IEs(If you don’t use an asynchronous callback from setTimeout to wrap the XDomainRequest, it may be lost sometime).
