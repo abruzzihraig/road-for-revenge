@@ -1,0 +1,2 @@
+### Normal Workday IV
+There’s nothing worth to record today. Good news to me is I fixed the bug from the underlying library MST I used. Those guys who maintain the library think the issue I met is an edge feature, so they don’t have enough time on figuring out how to fix it. I made a minimum demo for presenting the bug for helping them to debug, but along with the deeper I dug, the more clues came up to my mind, so finally, I worked out the cause of the bug. That’s the only thing gave me an impression today.
