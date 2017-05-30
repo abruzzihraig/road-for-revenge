@@ -1,0 +1,2 @@
+### Dragon Boat
+Today is a traditional Chinese festival Dragon Boat. At today, everyone in China will have rice dumpling, which called Zongzi by us. But I don’t have Zongzi. I opened my refrigerator, then I found there was the last can of rice porridge. That’s my dinner for celebrating the festival! Even along with a bottle of peanuts. It’s too poor to happy to me. Anyway, wish my friends in China could have a wonderful holiday.
