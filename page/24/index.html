@@ -127,6 +127,53 @@
 
     <div class="post-header index">
         <h1 class="title">
+            <a href="/2016/09/28/Webpack-Killed-Me-A-Thousand-Times/">
+                Webpack Killed Me A Thousand Times
+            </a>
+        </h1>
+        <div class="post-info">
+            <span class="date">2016-09-28</span>
+            <a href="https://github.com/abruzzihraig/road-for-revenge/issues/59" target="_blank" class="comments article-comment-link">review</a>
+            
+            
+                <span class="category">
+                    <a href="/categories/Journal/">Journal</a>
+                </span>
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <p>I’ve been using Webpack more than half year. It hurts me every time when I want to implement some essential features. I was totally confused why there are so many people like its black magic with its shitty documents?</p>
+<p>Whatever I complain, I have to say there are some features under the hood of Webpack are actually useful and effective for developing. But these two days, I met some issues with build flow based on Webpack, and that make my tasks on KDP project are delayed.</p>
+<p>I have two projects, one named KDP, another named Kanvas. The project Kanvas is an image editor could be released as a standalone version or an embedded version to KDP.</p>
+<p>And we use AWS S3 as a static server. So each of those projects will be deployed to different S3 buckets. However, the AWS S3 doesn’t support compression automatically like a real HTTP server, a Nginx server for instance. But we still could compress or make cache metadata for some kinds of files before we upload them.</p>
+<p>So the trouble comes:</p>
+<ol>
+<li>I need compiled and compressed resources from Kanvas to a S3 bucket as a standalone version.</li>
+<li>I need compiled but uncompressed resources from Kanvas to KDP, to make developers could use Kanvas within KDP development mode. In this integration version of Kanvas, it need to import two scripts for initialising and controlling Kanvas from outside. The both scripts shouldn’t be compressed or with a hash.</li>
+<li>I need compiled and compressed resources from KDP to another S3 bucket, it should be a public website for our clients. Since Kanvas and KDP are different projects, they have individual Webpack flow for themselves. So the process of compressing KDP doesn’t include the code from Kanvas. That means I have to compress code in Kanvas first, then copy the part-compressed code to KDP compiled folder.</li>
+</ol>
+<p>However, it’s not over yet. When I upload the final compiled folder to S3 bucket, I used a loader to add different HTTP metadata for each file will be uploaded. That means I have to ignore some files to prevent adding wrong metadata on.</p>
+<p>The whole build flow made me hurt before, it always take me much time, and the logic order is hard to remember. Once I made a mistake during the flow, I have to take 5 or 10 minutes to rebuild them again.</p>
+<p>So I refacted the whole build flow, I made three different environments for KDP, it includes ‘dev’, ‘dist’, ‘s3’. And I made four different environments for Kanvas, they are ‘dev’, ‘dist’, ‘gzip’, and ’s3’.</p>
+<p>Some of those environments have different basic configs are extended to the main Webpack config, especially some different paths. At the mean time, I made our API configs relating to these different environments.</p>
+<p>And I also wrote my AWS keys to the environment of my computer, then I could use them when deploy. Except some npm scripts on the both projects, I also wrote some alias scripts on my ZShell to make the complex building logic simpler.</p>
+<p>So even though I met lots of pits in Webpack again, finally I got only two commands to handle all those shitty work. And yes, I’m free again.</p>
+<p><em>Pls comment on the relative Issue of this journal on my Github, any advice would be appreciated!</em></p>
+
+        </div>
+    
+
+</div>
+
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
             <a href="/2016/09/27/May-The-Food-Guide-My-Way/">
                 May The Food Guide My Way
             </a>
@@ -457,42 +504,6 @@
 </div>
 
             
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2016/09/18/English-Speaking-It-Hurts/">
-                English Speaking It Hurts
-            </a>
-        </h1>
-        <div class="post-info">
-            <span class="date">2016-09-18</span>
-            <a href="https://github.com/abruzzihraig/road-for-revenge/issues/49" target="_blank" class="comments article-comment-link">review</a>
-            
-            
-                <span class="category">
-                    <a href="/categories/Journal/">Journal</a>
-                </span>
-            
-        </div>
-    </div>
-
-    
-        <div class="content">
-            <p>It’s to late to write tonight, so I’ll write less in the journal.</p>
-<p>Although I’ve made a plan to practise my writing skills by diarising everyday. There is still an issue about speaking. I don’t have any foreign friends here. And that is not a simple thing to make new friends with them. Because I don’t know their culture, I don’t have a good english skill, so they won’t make a friend with me actually.</p>
-<p>I was thinking a whole day about how to solve the situation and how to get rid of the bad circulating. It could be made a plan during this week. At least I have some ideas about that.</p>
-<p>For instance, I tried to watch dramas frame by frame to figure out any grammar or any words I didn’t know in every sentence. There were so many slangs made me confused. To finish an episode need double time more. I also tried to speak repeatedly with that. It actually made me hurt.</p>
-<p>Wish I could find a better way to practise, I am really want to conquer English someday.</p>
-<p><em>Pls comment on the relative Issue of this journal on my Github, any advice would be appreciated!</em></p>
-
-        </div>
-    
-
-</div>
-
-            
         </section>
     </div>
 </div>
@@ -535,6 +546,10 @@
         <ul>
             
             <li>
+                <a class="footer-post" href="/2017/06/09/Holiday-Comes/">Holiday Comes</a>
+            </li>
+            
+            <li>
                 <a class="footer-post" href="/2017/06/08/Sun-Knight-Relieve-Pain/">Sun Knight Relieve Pain</a>
             </li>
             
@@ -544,10 +559,6 @@
             
             <li>
                 <a class="footer-post" href="/2017/06/06/Kidney-Pain/">Kidney Pain</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2017/06/05/Being-Tired-In-Training/">Being Tired In Training</a>
             </li>
             
         </ul>
