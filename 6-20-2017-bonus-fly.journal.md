@@ -1,0 +1,2 @@
+### Bonus Fly
+The hardest part in email communication is absolutely applying for raise or asking for bonus. Since our financial year is almost over, and my boss used to promise there should be bonus for us, so I tried to ask if the bonus could be sent before the financial year ends for getting more tax return. I pluck up courage to write an email to boss, but I didn’t get the reply. So there’s only one reason for explaining that—we may not get that bonus.
