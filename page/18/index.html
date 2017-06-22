@@ -127,6 +127,47 @@
 
     <div class="post-header index">
         <h1 class="title">
+            <a href="/2016/12/09/You-Cannot-Revive-A-Dying-Programmer/">
+                You Cannot Revive A Dying Programmer
+            </a>
+        </h1>
+        <div class="post-info">
+            <span class="date">2016-12-09</span>
+            <a href="https://github.com/abruzzihraig/road-for-revenge/issues/131" target="_blank" class="comments article-comment-link">review</a>
+            
+            
+                <span class="category">
+                    <a href="/categories/Journal/">Journal</a>
+                </span>
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <p>About Three months ago, I got a requirement for deploying our project from backend developers. The requirement is they need a separated config file which should not be included in the final bundle file. That means the separated config file cannot go through the build flow of Webpack to do some tasks such as compression and combination.</p>
+<p>The requirement actually doesn’t make sense all the time. I asked those guys many times why we cannot use different environments by adding some parameters in our build scripts so that we could just easy to compile the same project with different settings. However, those guys don’t like anything about CLI. They don’t care using which way to do it will be better.</p>
+<p>Since I really don’t want to do some silly works like this, so I put off the task until today.</p>
+<p>At first, I just created an individual config file to hold those keys about API or region settings. All the configs have a fallback to the environment which registered in our computer before. So that if you don’t have an external config file, the application will work with the setting which you specified in your computer—also they are written in different ENV config files.</p>
+<p>But I changed my mind immediately. That’s because the separated file might be able to make a cache issue—user may not get the latest config if there is a cache on the server. Since we’ve used Webpack, if we don’t follow the rules of Webpack workflow, we might get some limitation there. For example, the final bundle file is easy to add a hash as a postfix to bust cache, but it’s not easy to just give the same hash postfix to a separated config file, which also shouldn’t go through the process of build workflow.</p>
+<p>Even if I could find some ugly ways to make it possible that add the same hash as the postfix for the separated config file. If the backend guys just want to keep lazy and only change the separated config file without compilation in the “dist” folder, then they just deploy the code to the server again, all things will be broken.</p>
+<p>So I just move the code of the separated config file to inline script in the index.html. Yet I still got an answer “no.” They even didn’t want to see my code and just kept their stupid solution as a bible. How can I do in the fucking team? There is always a dictator with his silly ideas to prevent me from doing something normal or better.</p>
+<p>We may argue about one hour for the issue. I just put the scenario like what I mentioned above to those guys. And they seemed got what I worried. Then a guy told me, he could compile all code before he changes the config file so that we don’t need to worry about if the cache doesn’t update.</p>
+<p>It sounds right uh? But if we have to compile everything before changing the individual config file, why we need the file itself? I was totally devastated because everything returns to my initial recommendation which from three months before. I asked them again, “why don’t we use a standard way to handle the different environments like many other companies?” They just quibbled to me and gave me an answer “you have to do it like what we said.”</p>
+<p>Can you feel that? I just want to fuck the team and fuck the dying programmers. When can I get rid of those people? Only God and the warden knows.</p>
+<p><em>Pls comment on the relative Issue of this journal on my Github, any advice would be appreciated!</em></p>
+
+        </div>
+    
+
+</div>
+
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
             <a href="/2016/12/08/PSN-HongKong-Is-Papa/">
                 PSN HongKong Is Papa
             </a>
@@ -439,39 +480,6 @@
 </div>
 
             
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2016/11/29/Best-Musical-Toy/">
-                Best Musical Toy
-            </a>
-        </h1>
-        <div class="post-info">
-            <span class="date">2016-11-29</span>
-            <a href="https://github.com/abruzzihraig/road-for-revenge/issues/121" target="_blank" class="comments article-comment-link">review</a>
-            
-            
-                <span class="category">
-                    <a href="/categories/Journal/">Journal</a>
-                </span>
-            
-        </div>
-    </div>
-
-    
-        <div class="content">
-            <h3 id="Best-Musical-Toy"><a href="#Best-Musical-Toy" class="headerlink" title="Best Musical Toy"></a>Best Musical Toy</h3><p>I forgot time for playing my new musical toy Launchpad Pro. It is an incredible Live MIDI controller. It is not easy to learn, but it really hits me. I found some funny projects online could be performed on my Launchpad. Like all of the instruments, to perform a project better, you have to practice more. That’s why I played it so late.</p>
-<p>I have to go bed to sleep, to welcome the shitty requirements at tomorrow.</p>
-<p><em>Pls comment on the relative Issue of this journal on my Github, any advice would be appreciated!</em></p>
-
-        </div>
-    
-
-</div>
-
-            
         </section>
     </div>
 </div>
@@ -514,6 +522,10 @@
         <ul>
             
             <li>
+                <a class="footer-post" href="/2017/06/22/Breaking-Always-Hurts/">Breaking Always Hurts</a>
+            </li>
+            
+            <li>
                 <a class="footer-post" href="/2017/06/21/Booklist-Never-Helps/">Booklist Never Helps</a>
             </li>
             
@@ -523,10 +535,6 @@
             
             <li>
                 <a class="footer-post" href="/2017/06/20/Journey/">Journey</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2017/06/18/Real-Case-About-Code-Maintainability/">Real Case About Code Main</a>
             </li>
             
         </ul>

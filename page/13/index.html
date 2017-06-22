@@ -127,6 +127,74 @@
 
     <div class="post-header index">
         <h1 class="title">
+            <a href="/2017/02/21/Note-Of-NG2—The-Difference-Between-AOT-And-JIT/">
+                Note Of NG2—The Difference Between AOT And JIT
+            </a>
+        </h1>
+        <div class="post-info">
+            <span class="date">2017-02-21</span>
+            <a href="https://github.com/abruzzihraig/road-for-revenge/issues/182" target="_blank" class="comments article-comment-link">review</a>
+            
+            
+                <span class="category">
+                    <a href="/categories/Journal/">Journal</a>
+                </span>
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <p>I made some note by my understood from reading the cookbook of NG2 today. </p>
+<p>Here is the note below:</p>
+<p>AOT: Ahead of time<br>For compiling code before any browser load it. Used in Production.</p>
+<p>Related:</p>
+<ol>
+<li>Rollup: The utility that do tree shaking. It only cares modules that have Import and Export statements.</li>
+<li>ngc: A compiler that provided in the @angular/compiler-cli instead of the Typescript compiler. It has better performance than Typescript compiler for AOT mode in Angular2 application.</li>
+<li>source-map-explorer: Analyse the source map generated with the bundle and draws a map of all dependencies.</li>
+</ol>
+<p>Advantage:</p>
+<ol>
+<li>Could reduce the HTTP requests of those resources which are individual dependencies.</li>
+<li>Could do tree shaking to reduce unused portions of both source and library code.</li>
+<li>Could improve the speed of loading and executing when first load the application with JIT.</li>
+<li>Could uglify and mangle the final code.</li>
+<li>It only produces one bundle script.</li>
+</ol>
+<p>Disadvantage:</p>
+<ol>
+<li>Not be friendly with dev mode, it will be slower when the application code larger. And every time we modified the code, it has to be compiled entirely again. It will take a several seconds or more.</li>
+</ol>
+<p>JIT: Just in time<br>For compiling the app in browser runtime when it loads. Used in Development.</p>
+<p>Related:</p>
+<ol>
+<li>SystemJS: It’s a ES module loader, and it could load any module format.</li>
+</ol>
+<p>Advantage:</p>
+<ol>
+<li>It is faster than compile everything in AOT mode so that it is better for the stage development.</li>
+</ol>
+<p>Disadvantage:</p>
+<ol>
+<li>It relies on a browser runtime to compile everything after the source code loaded. That will delay the time could start to use by users.</li>
+<li>It needs the angular compiler in browser, and the compiler is large and nearly equals to half size of the whole application code.</li>
+<li>It uses SystemJS to load multiple sources such as templates, css and JS files. It might slower than only one bundle file being loaded.</li>
+</ol>
+<p>By the way, it’s the first time I use Keep today.</p>
+<p><em>Pls comment on the relative Issue of this journal on my Github, any advice would be appreciated!</em></p>
+
+        </div>
+    
+
+</div>
+
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
             <a href="/2017/02/20/Nothing-II/">
                 Nothing-II
             </a>
@@ -427,42 +495,6 @@
 </div>
 
             
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2017/01/18/Graphics-Makes-Me-Dizzy/">
-                Graphics Makes Me Dizzy
-            </a>
-        </h1>
-        <div class="post-info">
-            <span class="date">2017-01-18</span>
-            <a href="https://github.com/abruzzihraig/road-for-revenge/issues/171" target="_blank" class="comments article-comment-link">review</a>
-            
-            
-                <span class="category">
-                    <a href="/categories/Journal/">Journal</a>
-                </span>
-            
-        </div>
-    </div>
-
-    
-        <div class="content">
-            <p>Thanks to my bro Dolphin. By his help, I finally understand the knowledge how does canvas effect on different resolutions. The problem has puzzled me a few years, but I have never been trying to figure it out. Whatever, it’s not too late. But it made me dizzy a while.</p>
-<p>Like what I said before, I really feel sick with the graphics code. Even though I just used some basic mathematics I learned from my high school. It doesn’t mean it’s easy to write by coding. The code is more abstract than equation on paper. Also, you can draw some shapes on your draft, but you cannot write a comment that is easy to understand in code. Once you met any issue or bug, you have to stop everything before you understand what you did in the previous code. That really makes me discouraged.</p>
-<p>In programming, you may need to be more careful on those edge conditions. Such as a divisor must not be zero, a slope could be infinite. You have to take care of every edge condition on your code to prevent those bugs which are hard to test.</p>
-<p>Sometimes, you may take much time to maintain your logic, and the situations you write more, the complexity would be harder. Today, when I found my conditions were written in draw function became more and more complicated, I tried to recreate the basic mathematical model of these complicated parts. After two hours, all the things got done with a clear way. That is the hardest part for me–you won’t know what is the best way before you taste bitterness in graphics programming, and, the cost is expensive.</p>
-<p>Otherwise, I’m not a genius, as well as I’m not good at math. So I can just keep admiring on those guys who really like to do awesome stuff with graphics by coding.</p>
-<p><em>Pls comment on the relative Issue of this journal on my Github, any advice would be appreciated!</em></p>
-
-        </div>
-    
-
-</div>
-
-            
         </section>
     </div>
 </div>
@@ -505,6 +537,10 @@
         <ul>
             
             <li>
+                <a class="footer-post" href="/2017/06/22/Breaking-Always-Hurts/">Breaking Always Hurts</a>
+            </li>
+            
+            <li>
                 <a class="footer-post" href="/2017/06/21/Booklist-Never-Helps/">Booklist Never Helps</a>
             </li>
             
@@ -514,10 +550,6 @@
             
             <li>
                 <a class="footer-post" href="/2017/06/20/Journey/">Journey</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2017/06/18/Real-Case-About-Code-Maintainability/">Real Case About Code Main</a>
             </li>
             
         </ul>
