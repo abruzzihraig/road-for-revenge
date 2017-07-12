@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="A journal for the road">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Yang He">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Summary Of Kakku Front-end Technology"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="A journal for the road" />
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Road To Revenge"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Summary Of Kakku Front-end Technology - Road To Revenge</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
+        
+    </div>
+</header>
+
+        <section class="main">
+            
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/2017/07/12/Summary-Of-Kakku-Front-end-Technology/">
+                Summary Of Kakku Front-end Technology
+            </a>
+        </h1>
+        <div class="post-info">
+            <span class="date">2017-07-12</span>
+            <a href="https://github.com/abruzzihraig/road-for-revenge/issues/317" target="_blank" class="comments article-comment-link">review</a>
+
+            
+            
+                <span class="category">
+                    <a href="/categories/Journal/">Journal</a>
+                </span>
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <p>According to the demand of AUS government, we need to give it a technology summary for the last financial year to get funding for the next year. So my boss gave me the task to write something for summarizing the Front-end technologies we used in the last year. It is sincerely recorded in the following article.</p>
+<p>During the year 2016 - 2017, our Kakku Front-end team created a series projects that have full of fantastic technologies. The most representative projects in those work are the three – KISS Insertion, Kakku Microsite Builder, and Kakku Publisher Portal. We will mainly focus on the first two projects in this summary.</p>
+<p>KISS Insertion:<br>The project KISS Insertion is one of our core products. In brief, it is a project that will inject advertisement to a browser of the user whose smart device is connected with our KISS server. If a user has accessed in our KISS server and is going to look through a website which is using HTTP instead of HTTPS, our KISS Insertion scripts will be injected into this website, then drawing or loading a specific advertisement as our advertisement configs in KISS server.</p>
+<p>Currently KISS Insertion it supports four kinds of advertisements, which include Image, Video, Icon, and Peel.</p>
+<p>We used to have an old version of the project KISS Insertion, but it has terrible code maintainability and bad performance. The Video advertisement cannot auto play on a user device, and the Peel advertisement is just an animation composed of four images switching to mock, which means it has deficient performance about 4fps. Except for that main issues, for other types of advertisements, there also were a bunch of bugs cannot easily be fixed due to the terrible code maintainability. So we finally decided to create a new KISS Insertion instead of refactoring the original one.</p>
+<p>In this year, it took us some time to create the new KISS Insertion. We introduced a stack of popular and advanced front-end technologies to this project. It mainly includes the following parts:</p>
+<ul>
+<li>TypeScript(using TypeScript we got strong type and high code maintainability, it reduces errors could occur during we modify a part of existing code)</li>
+<li>Pure DOM API(we don’t use jQuery anymore as the native DOM API is robust enough for our insertion handling. This reduces our final code size 20% or more)</li>
+<li>Canvas(totally drawing a complex flipping animation by mathematics and CanvasAPI instead of the poor image animation. The new performance is improved up to 60fps)</li>
+<li>CSS hardware acceleration(make all of our advertisement animation smoother up to 60fps)</li>
+<li>Stylus(a kind of CSS preprocessor could organize CSS with a better way for reusing and mixing)</li>
+<li>Webpack(we use Webpack to do everything about workflow, it speeds up our development environment and makes everything automatically, especially for the last stage compiling and bundling)</li>
+</ul>
+<p>Along with the feature video autoplay of iOS 10 comes, we finally made the Video advertisement could auto play in popular platforms Windows, Mac, iOS, and Android.</p>
+<p>It is a huge upgrade for KISS Insertion, no matter what for performance or code maintainability.</p>
+<p>Kakku Microsite Builder:<br>This project we called it KMB is created in late this year. It is a revolutionary product for our company. It will basically free people who want to build their personal or their company’s website. Ideally, you don’t need to have any knowledge about coding to create your website via this builder. The builder in technically it is a kind of WYSIWYG(what you see is what you get) editor. You can operate the builder with some simple interactions like dragging or selecting to create and adjust the website you want, and you can review it at the same time.</p>
+<p>For this revolutionary product, it has incredibly complex technical requirements. We are still working on the early stage, but we have already got some significant achievements:</p>
+<ul>
+<li>WYSIWYG editor(the website builder that users can interact with)</li>
+<li>Time Traveling(save different snapshots for undo and redo)</li>
+</ul>
+<p>Here are what technologies we used for implementing these amazing work:</p>
+<ul>
+<li>TypeScript(mentioned in KISS Insertion)</li>
+<li>React(using React can make us focus on the state change in a complex application. It reduces the code DOM manipulation written by us and uses its virtual DOM to batch update state changes to the real DOM. It greatly improves the performance of our builder such rich interactive application)</li>
+<li>MobX(as a state store, MobX it has fewer boilerplates than Redux. It is friendly to our small front-end team. The key feature of MobX is TFRP(functional reactive programming), it could simplify our code as much as it can. Since it is a state store, it is possible to make us implement the amazing functionality Time Traveling for our builder)</li>
+<li>MST(MST is mobs-state-tree. It is an opinionated and transactional architecture for MobX. It is designed as what architecture we want to design for our models in the builder. MST is based on an immutable and memory shared tree, which means we can store different snapshots as much as we want. It wouldn’t take much memory, and that’s why our Time Traveling can be such fast)</li>
+<li>Webpack(mentioned in KISS Insertion)</li>
+<li>Stylus(mentioned in KISS Insertion)</li>
+</ul>
+<p>We are still working on another core portion of KMB – parser for generating structured data to a real website. It will come soon in 2017.</p>
+<p><em>Pls comment on the relative Issue of this journal on my Github, any advice would be appreciated!</em></p>
+
+    </div>
+
+    
+
+    
+        <div class="post-tags">
+            <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/Tech/">#Tech</a> <a href="/tags/Summary/">#Summary</a>
+        </div>
+    
+
+    <!-- Comments -->
+    
+    <div class="comments">
+        
+
+
+    </div>
+    
+
+</div>
+
+        </section>
+
+    </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    All of themes are shit on Hexo except this funny one. Thanks for the desinger Jonathan Klughertz. So that I could use it to leverage my journals performed better.
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" href="/2017/07/12/Summary-Of-Kakku-Front-end-Technology/">Summary Of Kakku Front-en</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2017/07/11/Got-Nintendo-Switch/">Got Nintendo Switch</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2017/07/10/Got-Diarrhea-Again/">Got Diarrhea Again</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2017/07/10/Letter-Takes-Time/">Letter Takes Time</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 footer-categories">
+    <h2>Categories</h2>
+    <ul>
+        
+        <li>
+            <a class="footer-post" href="/categories/Journal/">Journal</a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/abruzzihraig/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="mailto:abruzzi.hraig@gmail.com">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    Thanks for the guy's design <a href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+<script src="/js/main.js"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
