@@ -1,0 +1,2 @@
+### Sick Again
+It’s not quite often happened in my body, but I am really sick again. During the latest month I caught a cold twice. That makes me feel pessimistic as sometimes I indeed want to die as early as I can. I don’t have family or girlfriend, and I don’t even have friends more than two in this city. The only thing I can do everyday is just live without passion. I don’t want to see myself that old and decadent in the future, and I don’t want to keep myself lonesome and anxious. I hope a disease could kill me immediately as I really cannot feel happy in my life.
